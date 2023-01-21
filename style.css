@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+    header{
+        background-color: #131921;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+        header span,
+        header form,
+        header a{
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        header a{
+            background-image: url("img/logos.png");
+            background-position-x: -7px;
+            background-position-y: 400px;
+            height: 32px;
+            width: 6%;
+            margin-right: 1.2%;
+            text-decoration: none;
+            color: #fff;
+            /* background-color: green; */
+        }
+            header a p{
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        header a#deliver{
+            background: none;
+            width: 5%;
+            margin-right: 1.2%;
+            padding-bottom: 5px;
+        }
+            header a#deliver p{
+                font-weight: 700;
+            }
+        header form{
+            border-radius: 10px;
+            width: 63%;
+            margin-right: 1.2%
+        }
+
+            header form select{
+                background-color: #f3f3f3;
+                height: 40px;
+                text-align: center;
+                border-radius: 4px 0 0 4px;
+                border: none;
+                font-size: 12px;
+                border-right: 1px solid gray;
+                color: grey;
+                padding: 0;
+                width: 5%;
+                vertical-align: top;
+                cursor: pointer;
+                margin-right: 0;
+            }
+                header form select option{
+                    border: none;
+                    border-radius: 0;
+                }
+            header form input{
+                height: 40px;
+                border: none;
+                width: calc(88% - 5px);
+                vertical-align: top;
+                padding-left: 5px;
+                
+            }
+            header form input#submit{
+                cursor: pointer;
+                width: 4%;
+                vertical-align: top;
+                background-color: #febd69;
+                border-radius: 0 4px 4px 0;
+                background-image: url("img/logos.png");
+                background-position-x: 3px;
+                background-position-y: 170px;
+            }
+        header select{
+            border: none;
+            background: none;
+            color: white;
+            font-weight: 700;
+            padding-bottom: 5px;
+            width: 2.3%;
+            margin-right: 1.2%;
+        }
+            header select option{
+                color: black;
+            }
+        header p#sign-in{
+            display: inline-block;
+            margin-right: 1.2%;
+            width: 7%;
+        }
+            header p#sign-in select{
+                display: block;
+                margin-right: 0;
+                font-size: 14px;
+                width: 100%;
+            }
+        header a#return{
+            background: none;
+            padding-bottom: 4px;
+            margin-right: .5%;
+            width: 5%;
+        }
+            header a#return p{
+                font-weight: 700;
+                font-size: 14px;
+                margin-right: 0;
+            }
+        header a#cart{
+            background-position-x: -10px;
+            background-position-y: 112px;
+            width: 3%;
+            position: relative;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+            header a#cart p{
+                position: absolute;
+                font-weight: 1000;
+            }
+            header a#cart p#number{
+                left: 16px;
+                color: orange;
+                font-size: 16px;
+                top: -5px;
+            }
+            header a#cart p#card-text{
+                top: 10px;
+                left: 38px;
+            }
+    nav{
+        background-color: #232f3e;
+        padding: 20px;
+    }
+        nav a{
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        nav p{
+            display: inline-block;
+            width: 50%;
+        }
+            nav p a{
+                display: inline-block;
+                width: fit-content;
+                text-align: initial;
+                margin-right: 20px;
+                font-weight: 100;
+            }
+            nav p a#selected{
+                font-weight: 700;
+            }
+    section{
+        width: 100%;
+        padding: 350px 0 20px 20px;
+        background-image: linear-gradient(to bottom, rgba(234, 237, 237, 0) 20%, rgba(234, 237, 237, 1) 40%), url("img/background.jpg");
+        background-color: rgb(173, 221, 230);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 1400px;
+    }
+        section div{
+            display: inline-block;
+            width: calc(100% / 4 - 1%);
+            background-color: white;
+            margin-right: 1%;
+            padding: 20px;
+            margin-bottom: 20px;
+            vertical-align: top;
+            height: 480px;
+        }
+            section div p{
+                font-size: 24px;
+                font-weight: 700;
+                height: 60px;
+            }
+            section div img{
+                display: block;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                margin-bottom: 70px;
+            }
+            section div a{
+                display: block;
+                text-decoration: none;
+                color: #1d8193;
+                font-size: 14px;
+            }
+                section div a span{
+                    display: inline-block;
+                    margin-bottom: 40px;
+                    width: 100%;
+                }
+                    section div a span img{
+                        width: 60%;
+                        height: 150px;
+                        margin: 0 auto;
+                    }
+                    section div a span p{
+                        font-size: 14px;
+                        margin:0;
+                        font-weight: normal;
+                        padding: 0;
+                        height: fit-content;
+                        text-align: center;
+                        color: black;
+                    }
+                    section div a span a{
+                        margin-top: 30px;
+                    }
+    footer{
+        margin-top: 20px;
+        text-align: center;
+        background-color: #121921;
+        padding: 20px;
+        padding-bottom: 40px;
+        font-size: 14px;
+    }
+        footer a{
+            text-decoration: none;
+            padding: 0 5px;
+            color: #e7e7e7;
+        }
+        footer p{
+            margin-top: 5px;
+            font-size: 14px;
+            color: #e7e7e7;
+        }
